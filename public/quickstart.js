@@ -170,6 +170,8 @@
     call.on("cancel", handleDisconnectedIncomingCall);
     call.on("disconnect", handleDisconnectedIncomingCall);
     call.on("reject", handleDisconnectedIncomingCall);
+
+    acceptIncomingCall(call);
   }
 
   // ACCEPT INCOMING CALL
